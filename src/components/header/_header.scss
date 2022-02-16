@@ -1,0 +1,92 @@
+@import '../../_base.scss';
+.header {
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    &__menu {
+        color: $black-primary;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    &__logo {
+        display: block;
+        max-width: 100px;
+    }
+    &__searchForm {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        margin: 0 20px;
+        justify-content: center;
+    }
+    &__search {
+        width: 100%;
+        max-width: 500px;
+        height: 35px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        &:focus {
+            border: 1px solid #008cff;
+            outline: none;
+        }
+    }
+    &__searchBtn {
+        height: 35px;
+        border: 1px solid #ccc;
+        padding: 0 15px;
+        &:active {
+            outline: none;
+            border: none;
+        }
+    }
+    &__icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__searchIcons{
+
+    }
+    &__notificationIcon {
+
+    }
+    &__appsIcon{
+
+    }
+    &__iconsRight {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        max-width: 300px;
+        color: $black-primary;
+        cursor: pointer;
+        &--Icon {
+            margin: 0 10px;
+        }
+    }
+    &__userImg {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+}
+
+@media(max-width: $breakpoint-small){
+    .header {
+        padding: 1rem;
+        &__menu {
+            // display: none;
+        }
+        &__search {
+            display: none;
+        }
+        &__searchBtn {
+            background: none;
+            border: none;
+        }
+    }
+}
