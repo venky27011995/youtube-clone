@@ -1,0 +1,30 @@
+
+.categoriesBar {
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    height: 50px;
+    padding: 0;
+    // width: 100%;
+    align-items: center;
+    overflow-x: auto;
+    
+    &__keyword{
+        border: 1px solid gray;
+        background: #ccc;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        margin: 0 5px;
+        font-size: 12px;
+        padding: 5px 10px;
+        cursor: pointer;
+        width: auto;
+        &:hover {
+            background: gray;
+        }
+        &.active {
+            background: #111;
+        }
+    }
+}

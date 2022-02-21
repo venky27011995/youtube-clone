@@ -16,10 +16,10 @@ const App = () => {
   return (
     <>
         <Header handleSidebarToggle={handleSidebarToggle} />
-        <div className='app_container border border-info'>
-            {sidebarToggle && <Sidebar sidebar={sidebarToggle} />}
-            <Container fluid className='app__main border border-warning'>
-                <HomeScreen />
+        <div className='app_container'>
+            {sidebarToggle && <Sidebar sidebar={sidebarToggle} handleSidebarToggle={handleSidebarToggle} />}
+            <Container fluid className='app__main p-0'>
+                <HomeScreen sidebar={sidebarToggle} />
             </Container>
         </div>
     </>

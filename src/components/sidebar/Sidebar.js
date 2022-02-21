@@ -4,9 +4,9 @@ import {
   MdSubscriptions, MdExitToApp, MdThumbUp, MdHistory, MdLibraryBooks, MdHome, MdSentimentDissatisfied
  } from 'react-icons/md'
 
-const Sidebar = ({sidebar}) => {
+const Sidebar = ({sidebar, handleSidebarToggle}) => {
   return (
-    <nav className={sidebar ? "sidebar open mobileMenu" : "sidebar"}>
+    <nav className={sidebar ? "sidebar open mobileMenu" : "sidebar"} onClick={()=>handleSidebarToggle(false)}>
       <li className='sidebar__menuItem'>
         <MdHome size={23}/> <span className='sidebar__menuItem--text'>Home</span>
       </li>

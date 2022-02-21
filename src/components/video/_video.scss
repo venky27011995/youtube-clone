@@ -1,0 +1,61 @@
+.video {
+    margin: 5px 5px 15px;
+    &__top {
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+    &__bottom {
+        display: flex;
+        flex-direction: row;
+        &--left {
+            &--channelIcon {
+                // width: 40px;
+                // height: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            
+        }
+        &--right {
+            margin-left: 15px;
+            &--title {
+                display: flex;
+                flex-direction: row;
+                span {
+                    font-weight: 600;
+                    font-size: 14px;
+                }
+            }
+            &--channel {
+                display: flex;
+                align-items: center;
+                color: rgb(99, 98, 98);
+                span {
+                    font-size: 14px;
+                }
+                .channel-tick {
+                    font-size: 12px;
+                    margin-left: 5px;
+                }
+            }
+            &--details {
+                display: flex;
+                align-items: center;
+                color: rgb(99, 98, 98);
+                font-size: 14px;
+                .view_icon {
+                    margin-right: 5px;
+                }
+                .time {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    img {
+        max-width: 100%;
+        display: block;
+    }
+}

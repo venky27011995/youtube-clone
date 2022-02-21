@@ -3,4 +3,17 @@
     flex-direction: row;
     height: calc(100vh - 50px);
     overflow-y: auto;
+    .app__main {
+        width: 100%;
+    }
+}
+.home__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    padding: 20px;
+    transition: all 0.3s;
+
+    &--box {
+        width: 100%;
+    }
 }
